@@ -1,0 +1,11 @@
+#page-thanks {
+  padding: 275px 0 120px;
+  height: auto;
+  min-height: 500px;
+  @extend %img;
+
+  @media (min-width: map_get($grid-breakpoints, sm)) {
+    padding-top: 120px;
+    height: 100vh;
+  }
+}

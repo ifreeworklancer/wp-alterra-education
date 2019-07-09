@@ -1,0 +1,23 @@
+%pos {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+%img {
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+%decor-text {
+    position: absolute;
+    font-size: 90px;
+    color: #fff;
+    opacity: .1;
+    font-weight: 500;
+    color: #333;
+    text-transform: uppercase;
+}

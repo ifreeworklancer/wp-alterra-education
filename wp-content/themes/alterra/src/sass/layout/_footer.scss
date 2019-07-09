@@ -1,0 +1,53 @@
+#app-footer {
+  padding-top: 105px;
+  background: #101010;
+  overflow-x: hidden;
+
+  .logo {
+    font-size: 30px;
+  }
+}
+
+#feedback-btn {
+  font-size: 16px;
+}
+
+.footer-item {
+  position: relative;
+  padding: 70px 0;
+
+  .footer-list {
+    margin: 0;
+
+    &-item {
+      margin-bottom: 15px;
+
+      @media (min-width: map_get($grid-breakpoints, md)) {
+        margin-bottom: 0;
+      }
+
+      &__link {
+        color: #fff;
+        font-weight: 500;
+        font-size: 14px;
+      }
+    }
+  }
+
+  &::before {
+    content: '';
+    @extend %pos;
+    left: -700px;
+    right: -700px;
+    background: #191919;
+  }
+}
+
+.footer-copyr {
+  padding: 25px 0;
+  color: #696969;
+
+  @media (max-width: map_get($grid-breakpoints, md)) {
+    font-size: 14px;
+  }
+}

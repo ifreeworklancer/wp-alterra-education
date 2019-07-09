@@ -1,0 +1,106 @@
+.form-group {
+
+  &.in-focus {
+
+    .label-placeholder {
+      color: $secondary;
+      bottom: 100%;
+    }
+
+    .form-control {
+      background: $secondary;
+    }
+  }
+
+  .label-placeholder {
+    position: absolute;
+    left: 15px;
+    bottom: 0;
+    padding-left: 25px;
+    color: #cacaca;
+    transition: .5s;
+    z-index: 5;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    &--name {
+
+      &::before {
+        width: 15px;
+        height: 18px;
+        background-image: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDI1OC43NSAyNTguNzUiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDI1OC43NSAyNTguNzU7IiB4bWw6c3BhY2U9InByZXNlcnZlIj48Y2lyY2xlIGN4PSIxMjkuMzc1IiBjeT0iNjAiIHI9IjYwIiBmaWxsPSIjODc4Nzg3Ii8+PHBhdGggZD0iTTEyOS4zNzUsMTUwYy02MC4wNjEsMC0xMDguNzUsNDguNjg5LTEwOC43NSwxMDguNzVoMjE3LjVDMjM4LjEyNSwxOTguNjg5LDE4OS40MzYsMTUwLDEyOS4zNzUsMTUweiIgZmlsbD0iIzg3ODc4NyIvPjwvc3ZnPg==);
+      }
+    }
+
+    &--email {
+
+      &::before {
+        width: 20px;
+        height: 15px;
+        background-image: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMzcwLjg4IDM3MC44OCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMzcwLjg4IDM3MC44ODsiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxwYXRoIGZpbGw9IiNjYWNhY2EiIGQ9Ik0zNTUuNiw2Ni4xNkgxNS4yOEM2Ljg0MSw2Ni4xNiwwLDczLjAwMSwwLDgxLjQ0djIwOGMwLDguNDM5LDYuODQxLDE1LjI4LDE1LjI4LDE1LjI4SDM1NS42YzguNDM5LDAsMTUuMjgtNi44NDEsMTUuMjgtMTUuMjh2LTIwOEMzNzAuODgsNzMuMDAxLDM2NC4wMzksNjYuMTYsMzU1LjYsNjYuMTZ6IE0xNS4yOCw3OC4xNkgzNTUuNmMxLjQzNiwwLjAwNywyLjcsMC45NDcsMy4xMiwyLjMyTDE4NS40NCwxODguNzJMMTIuMTYsODAuNDhDMTIuNTgsNzkuMTA3LDEzLjg0NCw3OC4xNjcsMTUuMjgsNzguMTZ6IE0xMiw5NC4xNkwxMzYuNjQsMTcyTDEyLDI3MC44OFY5NC4xNnogTTM1OC44OCwyODkuMzZjMCwxLjgxMi0xLjQ2OSwzLjI4LTMuMjgsMy4yOEgxNS4yOGMtMS44MTEsMC0zLjI4LTEuNDY5LTMuMjgtMy4yOHYtMy4ybDEzNS40NC0xMDcuMDRsMzQuOCwyMS43NmMxLjk1NSwxLjIzMyw0LjQ0NSwxLjIzMyw2LjQsMGwzNC44LTIxLjc2bDEzNS40NCwxMDcuMDRWMjg5LjM2eiBNMzU4Ljg4LDI3MC44OGwtMTI0Ljk2LTk4LjU2bDEyNC45Ni03Ny40NFYyNzAuODh6Ii8+PC9zdmc+);
+      }
+    }
+
+    &--phone {
+
+      &::before {
+        top: 55%;
+        width: 15px;
+        height: 20px;
+        background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMjcuNDQyIDI3LjQ0MiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMjcuNDQyIDI3LjQ0MjsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSI1MTJweCIgaGVpZ2h0PSI1MTJweCI+PHBhdGggZD0iTTE5LjQ5NCwwSDcuOTQ4QzYuODQzLDAsNS45NTEsMC44OTYsNS45NTEsMS45OTl2MjMuNDQ2YzAsMS4xMDIsMC44OTIsMS45OTcsMS45OTcsMS45OTdoMTEuNTQ2ICAgYzEuMTAzLDAsMS45OTctMC44OTUsMS45OTctMS45OTdWMS45OTlDMjEuNDkxLDAuODk2LDIwLjU5NywwLDE5LjQ5NCwweiBNMTAuODcyLDEuMjE0aDUuN2MwLjE0NCwwLDAuMjYxLDAuMjE1LDAuMjYxLDAuNDgxICAgcy0wLjExNywwLjQ4Mi0wLjI2MSwwLjQ4MmgtNS43Yy0wLjE0NSwwLTAuMjYtMC4yMTYtMC4yNi0wLjQ4MkMxMC42MTIsMS40MjksMTAuNzI3LDEuMjE0LDEwLjg3MiwxLjIxNHogTTEzLjcyMiwyNS40NjkgICBjLTAuNzAzLDAtMS4yNzUtMC41NzItMS4yNzUtMS4yNzZzMC41NzItMS4yNzQsMS4yNzUtMS4yNzRjMC43MDEsMCwxLjI3MywwLjU3LDEuMjczLDEuMjc0UzE0LjQyMywyNS40NjksMTMuNzIyLDI1LjQ2OXogICAgTTE5Ljk5NSwyMS4xSDcuNDQ4VjMuMzczaDEyLjU0N1YyMS4xeiIgZmlsbD0iI2NhY2FjYSIvPjwvc3ZnPg==);
+      }
+    }
+  }
+
+  .form-control {
+    padding-left: 15px;
+    border: 1px solid $secondary;
+    border-radius: 0;
+    outline: none;
+    background: $light;
+    color: #fff;
+    transition: .5s;
+    font-weight: 300;
+  }
+}
+
+
+form {
+  position: relative;
+  padding-bottom: 100px;
+
+  .btn {
+    font-size: 1rem;
+  }
+
+  br {
+    display: none;
+  }
+
+   p {
+     margin-bottom: 0;
+   }
+
+  .form-group-item {
+
+    .form-group {
+      width: 100%;
+
+      @media (min-width: map_get($grid-breakpoints, sm)) {
+        width: 50%;
+      }
+
+      @media (min-width: map_get($grid-breakpoints, lg)) {
+        width: 30%;
+      }
+    }
+  }
+}

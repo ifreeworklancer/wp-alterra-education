@@ -1,0 +1,28 @@
+$light: #363636;
+$primary: #c42626;
+$dark: #252525;
+$secondary: #707070;
+
+$body-color: #333 !default;
+
+$font-size-base: 1.125rem;
+
+$font-family-base: 'EtelkaPro',
+sans-serif;
+$headings-font-family: 'EtelkaPro',
+sans-serif;
+
+$link-hover-decoration: none !default;
+$input-btn-focus-width: 0 !default;
+$input-btn-focus-color: rgba(#fff, 0) !default;
+$input-btn-focus-box-shadow: 0 0 0 $input-btn-focus-width $input-btn-focus-color !default;
+
+$border-width: 0 !default;
+
+$border-radius: 10px;
+$btn-padding-x: 65px;
+$btn-padding-y: 20px;
+
+$h1-font-size: $font-size-base * 3.1 !default;
+$h2-font-size: $font-size-base * 2 !default;
+$h3-font-size: $font-size-base * 1.33 !default;

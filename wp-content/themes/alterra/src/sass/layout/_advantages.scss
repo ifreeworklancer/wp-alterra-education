@@ -1,0 +1,48 @@
+#advantages {
+  padding-top: 150px;
+  padding-bottom: 90px;
+  z-index: 3;
+
+  .advantages__decoration-text {
+    @extend %decor-text;
+    top: 30px;
+    left: 60%;
+  }
+
+  .advantages-img {
+    position: relative;
+    margin-bottom: 40px;
+    height: 250px;
+    cursor: pointer;
+    @extend %img;
+
+    @media (min-width: map_get($grid-breakpoints, sm)) {
+      height: 450px;
+    }
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 10%;
+    right: 0;
+    bottom: 210px;
+    background: #f3f3f3;
+    z-index: -3;
+  }
+}
+
+.advantages-item {
+  position: relative;
+  margin-top: 70px;
+
+  .decoration-line {
+    position: absolute;
+    top: -25px;
+    right: -100vw;
+    left: 0;
+    height: 1px;
+    background: #7c7c7c;
+  }
+}
